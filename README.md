@@ -1,6 +1,6 @@
-# Electric-Vehicle-Next-Charge-Location-Prediction
+**Electric-Vehicle-Next-Charge-Location-Prediction**
 
-This repo contains
+**This repo contains**
 
 
 	README.md contains a list of folders and their contents. Steps to follow using the jupyter code.
@@ -14,14 +14,14 @@ This repo contains
 
 
 
-	And the following 3 folders:
+	**And the following 3 folders:**
 	
-	1) docs
+	**1) docs**
 
 	This folder contains a Chicago city map with 77 community areas, these community areas are used in this use case for EV next charge location predicition problem area.
 
 	
-	2) data
+	**2) data**
 
 	This folder contains all datasets including: 
 
@@ -41,7 +41,7 @@ This repo contains
 	  areas that share a common border with the community area in the first column.
 
 
-	3) code
+	**3) code**
 
 	- BATCH_PADDING.ipynb this jupyter notebook file contains scripts to batch, pad, and analyse data to get it ready for 
 	  modelling.  
