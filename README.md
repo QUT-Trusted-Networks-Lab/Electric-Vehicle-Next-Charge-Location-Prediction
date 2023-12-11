@@ -1,54 +1,41 @@
-**Electric-Vehicle-Next-Charge-Location-Prediction**
+Electric Vehicle Next Charge Location Prediction
 
-**This repo contains**
+This repository contains the following folders: 
 
-
-	README.md contains a list of folders and their contents. Steps to follow using the jupyter code.
-
-	1) First use the BATCH_PADDING.ipynb, this file has all the scripts required to prepare data for modelling, all scripts are fully commented.
-
-	2) Second the MODELLING.ipynb, this file has all the scripts required to prepare and model data insluding for BiLSTM and CNN models, all scripts are fully commented.
-
-	3) The BATTERY_MASK.ipynb files is used to mask charge cycles to represent different battery charge levels to model for
-	   a variety of battery charge ranges.
-
-
-
-	**And the following 3 folders:**
+Code
 	
-	**1) docs**
+a) BATCH_PADDING.ipynb
+This file contains functions to prepare data for modelling, all code is fully commented. Functions include creating batches, padding batches, and analysis of data.  
 
-	This folder contains a Chicago city map with 77 community areas, these community areas are used in this use case for EV next charge location predicition problem area.
+b) MODELLING.ipynb 
+This file contains all scripts required to prepare and model data using both BiLSTM and CNN fastai models, all code is fully commented.
 
-	
-	**2) data**
-
-	This folder contains all datasets including: 
-
-	- 12 months of ev taxi spatio-temporal datasets, each month of the year seperated into individual csv files.
-	
-	- data_dictionary.csv explaining features in our ev monthly csv files.
-
-	- EV_Sales.xlsx this file contains logistics for the 9 EVs including battery capacity kWh, range in km, energy 
-	  consumption Wh/km, sales 2019, and total sales within the USA.
-	
-	- period.xlsx this file contains 7 periods of a 24 hour day including start and end time for these periods.
-
-	- ChargeStations.xlsx this file contains 77 community areas and the amount of petrol stations which we assume will be 
-	  charge stations in the future.
-
-	- location_boundary.xlsx this file contains community areas from 1 to 77 in the first column, followed by community 
-	  areas that share a common border with the community area in the first column.
+c) BATTERY_MASK.ipynb 
+This file is used to mask charge cycles to represent different battery charge levels to model data representing a variety of battery charge ranges.
 
 
-	**3) code**
+Docs
 
-	- BATCH_PADDING.ipynb this jupyter notebook file contains scripts to batch, pad, and analyse data to get it ready for 
-	  modelling.  
+a) Chicago City Map.afphoto
+This file is a map for Chicago city which has 77 community areas, these community areas are taxi passenger pickup and drop off locations as well as possible EV next charge location prediction areas.
 
-	- BATTERY_MASK.ipynb this jupyter notebook file contains scripts to mask each batch so they can be used in modelling 
-	  for a range of battery charge levels. 
+b) Chicago-Charge-Stations.xlsx
+This file is a list of service stations and their addresses including the community area ID, we assume these service stations will be charge stations in the future.
 
-	- MODELLING.ipynb this jupyter notebook file contains scripts to prepare and model using both Bidirectional LSTM 
-	  (BiLSTM), and Convolutional neural network (CNN) being a fastai xresnet18 both pretrained and non-pretrained. 
+
+Data
+
+This folder contains all datasets including: 
+
+a) 12 months of EV taxi spatio-temporal datasets every month divided into 3 CSV files, each CSV file has a header including all feature titles.
+
+b) A CSV file which is a data_dictionary.csv explaining features in our EV monthly CSV files.
+
+c) EV_Sales.xlsx this file contains logistics for the 9 EVs including battery capacity kWh, range in Kilometres (km), energy consumption Wh/km, sales 2019, and total sales within the USA.
+
+d) A file called period.xlsx this file contains 7 periods of a 24 hour day including start and end time for these periods.
+
+e) ChargeStations.xlsx this file contains 77 community areas and the number of petrol/service stations that these communities have, we assume these service stations will be charge stations in the future.
+
+f) location_boundary.xlsx this file contains community areas ranging from 1 to 77 in the first column, followed by community areas that share a common border with the community area in the first column.
  
