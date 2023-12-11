@@ -1,8 +1,13 @@
-Electric Vehicle Next Charge Location Prediction
+# Electric Vehicle Next Charge Location Prediction
 
-This repository contains the following folders: 
+### Abstract—
+By 2050, global sales of electric vehicles (EVs) are predicted to account for approximately 70% of all vehicle sales. However, whilst transitioning from combustion engine vehicles to EVs would result in reduced carbon dioxide emissions, it would place significant strain on energy generation, and grid infrastructure. Many EV studies investigated routing or charge station management, while research on predicting energy demand at a specific location was lacking. To address this, our study focused on predicting EV’s next charge location. We developed a localised onboard Convolutional Neural Network (CNN) model that achieved accuracies up to 95%. Our proposal used community area Distributed Energy Resource Management Systems (DERMS) to train EV models during charge transactions, while predictions were made onboard each EV. To address the lack of EV mobility charge data, we created a hybrid dataset using empirical Chicago city taxi mobility data adding synthetic EV charging event states. We conducted multiple experiments over various battery charge levels to understand how far ahead in time next charge location could be predicted, achieving reliable predictions up to 3 days before requiring next charge. Finally, this study laid a foundation for future EV mobility research by providing a novel EV mobility charge dataset.
 
-Code
+Index Terms—EV Mobility prediction, EV next charge location prediction, Convolutional Neural Network CNN
+
+## This repository contains the following folders: 
+
+## Code
 	
 a) BATCH_PADDING.ipynb
 This file contains functions to prepare data for modelling, all code is fully commented. Functions include creating batches, padding batches, and analysis of data.  
@@ -14,7 +19,7 @@ c) BATTERY_MASK.ipynb
 This file is used to mask charge cycles to represent different battery charge levels to model data representing a variety of battery charge ranges.
 
 
-Docs
+## Docs
 
 a) Chicago City Map.afphoto
 This file is a map for Chicago city which has 77 community areas, these community areas are taxi passenger pickup and drop off locations as well as possible EV next charge location prediction areas.
@@ -23,7 +28,7 @@ b) Chicago-Charge-Stations.xlsx
 This file is a list of service stations and their addresses including the community area ID, we assume these service stations will be charge stations in the future.
 
 
-Data
+## Data
 
 This folder contains all datasets including: 
 
