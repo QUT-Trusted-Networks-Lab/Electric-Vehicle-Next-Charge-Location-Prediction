@@ -31,7 +31,7 @@ a) 12 months of EV taxi spatio-temporal datasets every month divided into 3 CSV 
 
 b) A CSV file which is a data_dictionary.csv explaining features in our EV monthly CSV files.
 
-c) EV_Sales.xlsx this file contains logistics for the 9 EVs including battery capacity kWh, range in Kilometres (km), energy consumption Wh/km, sales 2019, and total sales within the USA.
+c) EV_Sales.xlsx this file contains logistics for the 9 EVs including battery capacity kWh, range in kilometres (km), energy consumption Wh/km (watt hours per km), sales 2019, and total sales within the USA.
 
 d) A file called period.xlsx this file contains 7 periods of a 24 hour day including start and end time for these periods.
 
